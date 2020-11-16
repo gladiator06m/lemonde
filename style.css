@@ -1,0 +1,428 @@
+@font-face{
+        font-family: "theAntiquaB";
+        src: url("./font/TheAntiquaB\ E2s\ Light.otf")
+}
+
+@font-face{
+    font-family: "theAntiquaBold";
+    src: url("./font/TheAntiquaB\ E2s\ Bold.otf")
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:#F5F6F8;
+}
+
+
+
+
+/* Header */
+.start{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-rows:129px 53px 140px;
+    padding:0px;
+    margin:0px;
+}
+
+header {
+    background-color:white;
+    border-bottom:5px solid #036487;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo img{
+   width: auto;
+}
+
+header a{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    color:black;
+}
+
+header .connexion a:nth-child(1)::before{
+    content: url(./img/connexion.svg);
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -25px;
+}
+
+header .connexion a:nth-child(2){
+    border: .1rem solid #ffc700;
+    background-color: #ffc700;
+    border-radius: .3rem;
+    cursor: pointer;
+    line-height: normal;
+    padding: .6rem 1.2rem;
+    text-decoration: none!important;
+    transition: background-color .3s;
+}
+
+
+header .connexion a:nth-child(2):hover{
+    background-color: #eab002;
+    border: .1rem solid #eab002;
+}
+
+
+header .connexion a:nth-child(2)::before{
+    content: url(./img/substract.png);
+    position: absolute;
+    margin-top: -6px;
+    margin-left: -44px;
+}
+
+
+
+header a{
+    padding-right: 10px;
+    align-self: center;
+}
+
+.journal{
+    display: flex;
+}
+
+.journal p{
+    align-self: center;
+}
+
+
+/* nav */
+
+nav{
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:20px 0px;
+    background-color: white;
+    padding-left:55px;
+    padding-right:55px;
+
+}
+
+nav ul a{
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#2a303b;
+    letter-spacing: .06rem;
+    font-family: "theAntiquaBold";
+    padding:16px 0px;
+    letter-spacing: 0px;
+    
+}
+
+nav ul a:hover{
+    color: #026b9c;
+}
+
+
+
+nav ul li a:after{
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    align-self: center;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-left: .4rem;
+    background-image: url("./img/fleche.svg");
+    -webkit-transform: none;
+    transform: none;
+}
+
+/* aside div bleu */
+
+aside {
+    display: flex;
+    justify-content: space-around;
+    background-color: #026b9c;
+    padding-left:80px;
+    padding-right: 80px;
+}
+
+aside .bbleu{
+    padding: 0 1.6rem 2rem;
+    border-right: .1rem solid #024771;
+    padding-right: 1.6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+aside .bbleu .bleu{
+    color: #79c4df;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: arial;
+}
+
+aside .bbleu a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: arial;
+}
+
+aside .bbleus{
+    padding: 0 1.6rem 2rem;
+    padding-right: 1.6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+aside .bbleus .bleu{
+    color: #79c4df;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: arial;
+}
+
+aside .bbleus a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: arial;
+}
+
+aside .bbleu a:hover{
+    text-decoration: underline;
+}
+
+aside .bbleus a:hover{
+    text-decoration: underline;
+}
+
+/* article */
+
+article{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 2.4rem;
+    box-shadow: 0 0.2rem #f5f6f8 inset, 0.15rem 0 #f5f6f8 inset, -0.15rem 0 #f5f6f8 inset;
+    grid-gap:25px;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-top:30px;
+    background-color: white;
+    Overflow:auto;
+}
+
+article .titre img{
+    width: 100%;
+}
+
+article .bloc1 .dessous{
+    display: flex;
+}
+
+article .bloc1 .dessous a:first-child{
+    padding-right: 30px;
+}
+
+article .bloc1{
+    grid-column:1/2;
+}
+
+article .bloc1 .titre a h1{
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 31.92px;
+    width: auto;
+    text-decoration: none;
+    font-family: "theAntiquaBold";
+}
+
+article .bloc1 .titre a h1::before{
+    background-image: url("./img/monde.svg");
+    content: " ";
+    background-repeat: no-repeat;
+    align-self: center;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-left: .4rem;
+    -webkit-transform: none;
+    transform: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+article .bloc1 .titre a{
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 31.92px;
+    width: auto;
+    text-decoration: none;
+}
+
+article .bloc1 .titre p{
+    font-family: "theAntiquaB";
+    padding-top:20px;
+}
+
+article .bloc1 .dessous{
+    font-family: "theAntiquaBold";
+    padding-top:20px;
+}
+
+.ligne{
+    height: 0.5px;
+    margin-top:15px;
+    margin-bottom:30px;
+    background-color: #d5d8dc;
+}
+
+.ligne2{
+    grid-column:1/3;
+}
+
+article .bloc1 .dessous a{
+    text-decoration: none;
+    color:#2a303b;
+}
+
+article .bloc1 .dessous a::before{
+    background-image: url("./img/monde.svg");
+    content: " ";
+    background-repeat: no-repeat;
+    align-self: center;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-left: .4rem;
+    -webkit-transform: none;
+    transform: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+article .bloc2{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+}
+
+article .bloc2 a{
+    cursor: pointer;
+    font-weight: 800;
+    width: auto;
+    text-decoration: none;
+    font-family: "theAntiquaBold";
+    padding-top:40px;
+    color:#2a303b;
+}
+
+article .bloc2 img{
+    width: 100%;
+}
+
+
+article .bloc3 img{
+    width: 100%;
+}
+
+article .bloc3 a{
+    font-family: "theAntiquaBold";
+    padding-top:20px;
+    text-decoration: none;
+    color:#2a303b;
+}
+
+article .bloc3 h5{
+    text-align: center;
+    font-size: 18px;
+    font-family: "theAntiquaB";
+    color:#2a303b;
+}
+
+article .bloc3 a::before{
+    background-image: url("./img/monde.svg");
+    content: " ";
+    background-repeat: no-repeat;
+    align-self: center;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-left: .4rem;
+    -webkit-transform: none;
+    transform: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.bloc3 p{
+    text-align: center;
+    font-family: "theAntiquaB";
+    color:#2a303b;
+}
+
+.bloc3{
+    border:1px solid #d5d8dc;
+}
+
+.ligne2{
+    grid-column:1/3;
+    height: 0.5px;
+    margin-top:15px;
+    margin-bottom:30px;
+    background-color: #d5d8dc;
+}
+
+.bloc4{
+    grid-column: 1/3;
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.bloc4 .flex3{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bloc4 .flex3 img{
+    width: 80%;
+}
+
+.bloc4 .flex3 a{
+    font-family: "theAntiquaBold";
+    padding-top:20px;
+    text-decoration: none;
+    font-family: "theAntiquaBold";
+    color:#2a303b;
+}
+
+
+
