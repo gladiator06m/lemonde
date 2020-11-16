@@ -1,0 +1,171 @@
+/* Services: */
+.services__title--grey{
+font-size: 2.2rem;
+font-weight: 800;
+line-height: 1.3;
+margin-bottom: 0;
+letter-spacing: normal;
+text-decoration: none;
+color: #8b92a1;
+width: auto;
+height: auto;
+}
+
+
+.loaded{
+    margin-right: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer: */
+
+#footer {
+ 
+    z-index: 4;
+    background-color: #2a303b;
+    color: #e8eaee;
+    padding: 4rem 1.6rem;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;
+
+}
+
+#gauche{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer_title{
+background: 0 0;
+border: 0;
+margin: 0;
+padding: 0;
+width: 100%;
+display: inline-block;
+cursor: pointer;
+line-height: 1;
+color: #ffffff;
+display: inline-flex;
+justify-content: flex-start;
+margin-left: 25px;
+}
+
+.footer_rubrique{
+    border-bottom: .1rem solid #a4a9b4;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    line-height: 1.3;
+}
+
+#app{
+    display: flex;
+}
+
+ #app #iphone {
+    list-style-image: url("img/iconM.png");
+border-right:.1rem solid #a4a9b4;
+padding-right: 20px;
+height: 25px;
+} 
+#app #android {
+    list-style-type: none;
+    margin-left: -25px;
+} 
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#Aiphone{
+    position: relative;
+    top: -10px;
+}
+
+#droite{
+    margin-left: 40px;
+    margin-top: -20px;
+    
+}
+
+#abonnement a{
+    display: flex;
+    flex-direction: column;
+}
+
+/* #suivez{
+    display: flex;
+    
+}
+#reseau1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+#reseau2{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+#M, #co, #jour{
+display: flex;
+margin-bottom: 15px;
+}
+
+#co, #jour{
+    margin-left: -10px;
+}
+
+#monde{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: .1rem solid #a4a9b4;
+    
+}
+
+#col{
+    display: flex;
+    
+}
+
+#suivez{
+    display: flex;
+    flex-direction: row; 
+}
+
+.reseau{
+    top: 20px;
+}
+
+#bottom{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.reseau{
+    position: relative;
+    top: 8px;
+}
